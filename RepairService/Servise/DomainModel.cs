@@ -21,9 +21,15 @@ namespace Servise
         /// </summary>
         public string Model { get; set; }
         /// <summary>
+        /// Описание неисправности
+        /// </summary>
+        public List<FaultType> Faults { get; set; }
+        /// <summary>
         /// Стоимость
         /// </summary>
         public decimal Price { get; set; }
+        public Currency Currency { get; set; }
+
     }
     public enum Currency
     {
@@ -35,11 +41,18 @@ namespace Servise
         /// Описание неисправности
         /// </summary>
         public string Description { get; set; }
-        /// <summary>
-        /// Решение
-        /// </summary>
-        public string Solution { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0}", Description);
+        }
+
+        public FaultType Clone()
+        {
+            return new FaultType { Description = Description};
+        }
     }
+
     public enum DeviceType
     {
         Smartphone,

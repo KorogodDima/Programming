@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servise", "Servise\Servise.csproj", "{795B5901-D4C1-4850-949C-52787BE29972}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Servise\Service.csproj", "{795B5901-D4C1-4850-949C-52787BE29972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepairService.UI", "RepairService.UI\RepairService.UI.csproj", "{BC4971AF-9AB0-4802-BF66-9293CD274A19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{795B5901-D4C1-4850-949C-52787BE29972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795B5901-D4C1-4850-949C-52787BE29972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795B5901-D4C1-4850-949C-52787BE29972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC4971AF-9AB0-4802-BF66-9293CD274A19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC4971AF-9AB0-4802-BF66-9293CD274A19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC4971AF-9AB0-4802-BF66-9293CD274A19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC4971AF-9AB0-4802-BF66-9293CD274A19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
