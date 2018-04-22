@@ -24,10 +24,14 @@ namespace RepairService.UI
         private void FaultsForm_Load(object sender, EventArgs e)
         {
             DescriptionBox.Text = ft.Description;
+            CoefficientBox.Text = ft.Coefficient;
         }
         private void ButtonOk_Click(object sender, EventArgs e)
         {
             ft.Description = DescriptionBox.Text;
+            ft.Coefficient = CoefficientBox.Text;
+            ft.Cost = Convert.ToDecimal(ft.Coefficient) * 500;
         }
+
     }
 }

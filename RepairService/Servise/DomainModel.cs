@@ -13,7 +13,7 @@ namespace Servise
         /// </summary>
         public DateTime Filled { get; set; }
         /// <summary>
-        /// ФИО пассажира
+        /// ФИО Клиента
         /// </summary>
         public string FullName { get; set; }
         /// <summary>
@@ -21,11 +21,15 @@ namespace Servise
         /// </summary>
         public string Model { get; set; }
         /// <summary>
+        /// Тип устройства
+        /// </summary>
+        public DeviceType Type { get; set; }
+        /// <summary>
         /// Описание неисправности
         /// </summary>
         public List<FaultType> Faults { get; set; }
         /// <summary>
-        /// Стоимость
+        /// Итоговая цена
         /// </summary>
         public decimal Price { get; set; }
         public Currency Currency { get; set; }
@@ -41,15 +45,23 @@ namespace Servise
         /// Описание неисправности
         /// </summary>
         public string Description { get; set; }
+        /// <summary>
+        /// Коэффициент сложности
+        /// </summary>
+        public string Coefficient { get; set; }
+        /// <summary>
+        /// Стоимость
+        /// </summary>
+        public decimal Cost { get; set; }
 
         public override string ToString()
         {
-            return string.Format("{0}", Description);
+            return string.Format("{0}      Цена {1} руб.", Description, Cost);
         }
 
         public FaultType Clone()
         {
-            return new FaultType { Description = Description};
+            return new FaultType { Description = Description, Coefficient=Coefficient};
         }
     }
 

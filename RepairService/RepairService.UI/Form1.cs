@@ -23,8 +23,10 @@ namespace RepairService.UI
             return new RepairRequest()
             {
                 Filled = Date.Value,
+                FullName = CustomerName.Text,
+                Model = ModelName.Text,
                 Faults = ListOfFaults.Items.OfType<FaultType>().ToList(),
-                
+                Price = PriceBox.Value,
             };
         }
 
@@ -32,11 +34,14 @@ namespace RepairService.UI
         {
             ButtonDelete.Enabled = false;
             Date.Value = rep.Filled;
+            CustomerName.Text = rep.FullName;
+            ModelName.Text = rep.Model;
             ListOfFaults.Items.Clear();
             foreach (var e in rep.Faults)
             {
                 ListOfFaults.Items.Add(e);
-            }       
+            }
+            PriceBox.Value = rep.Price;
         }
 
         private void ListOfFaults_SelectedIndexChanged(object sender, EventArgs e)
@@ -66,6 +71,7 @@ namespace RepairService.UI
             if (res == DialogResult.OK)
             {
                 ListOfFaults.Items.Add(form.ft);
+                RecalculatePrice();
             }
         }
 
@@ -73,6 +79,7 @@ namespace RepairService.UI
         {
             var si = ListOfFaults.SelectedIndex;
             ListOfFaults.Items.RemoveAt(si);
+            RecalculatePrice();
         }
 
         private void ButtonSave_Click(object sender, EventArgs e)
@@ -95,6 +102,18 @@ namespace RepairService.UI
                 var rep = RequestHelper.LoadFromFile(ofd.FileName);
                 SetModelToUI(rep);
             }
+        }
+        private void RecalculatePrice()
+        {
+            var rr = GetModelFromUI();
+            decimal price = 200;
+            foreach (var e in rr.Faults)
+            {
+                double cf = Convert.ToDouble(e.Coefficient);
+                price += (decimal)(500 * cf);
+            }
+
+            PriceBox.Value = price;
         }
     }
 }
