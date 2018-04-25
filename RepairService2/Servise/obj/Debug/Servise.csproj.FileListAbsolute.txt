@@ -1,0 +1,6 @@
+C:\Users\111\source\repos\RepairService\Servise\bin\Debug\Servise.dll
+C:\Users\111\source\repos\RepairService\Servise\bin\Debug\Servise.pdb
+C:\Users\111\source\repos\RepairService\Servise\obj\Debug\Servise.csprojResolveAssemblyReference.cache
+C:\Users\111\source\repos\RepairService\Servise\obj\Debug\Servise.csproj.CoreCompileInputs.cache
+C:\Users\111\source\repos\RepairService\Servise\obj\Debug\Servise.dll
+C:\Users\111\source\repos\RepairService\Servise\obj\Debug\Servise.pdb
