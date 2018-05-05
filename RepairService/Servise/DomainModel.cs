@@ -67,6 +67,7 @@ namespace Servise
 
     public enum DeviceType
     {
+
         Smartphone,
         Tablet,
         Laptop,

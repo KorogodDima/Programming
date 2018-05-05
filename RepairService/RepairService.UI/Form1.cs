@@ -9,13 +9,37 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Servise;
 
+
 namespace RepairService.UI
 {
+    
     public partial class Form1 : Form
     {
+        public RepairRequest rr = new RepairRequest();
         public Form1()
         {
+            
             InitializeComponent();
+
+        }
+        private void radioButtons_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ButtonSmartphone.Checked)
+            {
+                rr.Type = DeviceType.Smartphone;
+            }
+            else if (ButtonTablet.Checked)
+            {
+                rr.Type = DeviceType.Tablet;
+            }
+            else if (ButtonLaptop.Checked)
+            {
+                rr.Type = DeviceType.Laptop;
+            }
+            else if (ButtonPC.Checked)
+            {
+                rr.Type = DeviceType.PC;
+            }
         }
 
         RepairRequest GetModelFromUI()
@@ -25,6 +49,7 @@ namespace RepairService.UI
                 Filled = Date.Value,
                 FullName = CustomerName.Text,
                 Model = ModelName.Text,
+                Type = rr.Type,
                 Faults = ListOfFaults.Items.OfType<FaultType>().ToList(),
                 Price = PriceBox.Value,
             };
@@ -36,6 +61,21 @@ namespace RepairService.UI
             Date.Value = rep.Filled;
             CustomerName.Text = rep.FullName;
             ModelName.Text = rep.Model;
+            switch (rep.Type)
+            {
+                case DeviceType.Smartphone:
+                    ButtonSmartphone.Checked = true;
+                    break;
+                case DeviceType.Tablet:
+                    ButtonTablet.Checked = true;
+                    break;
+                case DeviceType.Laptop:
+                    ButtonLaptop.Checked = true;
+                    break;
+                case DeviceType.PC:
+                    ButtonPC.Checked = true;
+                    break;
+            }
             ListOfFaults.Items.Clear();
             foreach (var e in rep.Faults)
             {

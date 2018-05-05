@@ -89,7 +89,7 @@
             // 
             // ModelName
             // 
-            this.ModelName.Location = new System.Drawing.Point(15, 80);
+            this.ModelName.Location = new System.Drawing.Point(15, 117);
             this.ModelName.Name = "ModelName";
             this.ModelName.Size = new System.Drawing.Size(410, 20);
             this.ModelName.TabIndex = 4;
@@ -97,7 +97,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 64);
+            this.label3.Location = new System.Drawing.Point(12, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 5;
@@ -113,6 +113,7 @@
             this.ButtonSmartphone.TabStop = true;
             this.ButtonSmartphone.Text = "Смартфон";
             this.ButtonSmartphone.UseVisualStyleBackColor = true;
+
             // 
             // ButtonTablet
             // 
@@ -234,11 +235,15 @@
             this.GroupBox.Controls.Add(this.ButtonLaptop);
             this.GroupBox.Controls.Add(this.ButtonTablet);
             this.GroupBox.Controls.Add(this.ButtonSmartphone);
-            this.GroupBox.Location = new System.Drawing.Point(15, 100);
+            this.GroupBox.Location = new System.Drawing.Point(15, 55);
             this.GroupBox.Name = "GroupBox";
             this.GroupBox.Size = new System.Drawing.Size(281, 37);
             this.GroupBox.TabIndex = 18;
             this.GroupBox.TabStop = false;
+            this.ButtonSmartphone.CheckedChanged += new System.EventHandler(radioButtons_CheckedChanged);
+            this.ButtonTablet.CheckedChanged += new System.EventHandler(radioButtons_CheckedChanged);
+            this.ButtonLaptop.CheckedChanged += new System.EventHandler(radioButtons_CheckedChanged);
+            this.ButtonPC.CheckedChanged += new System.EventHandler(radioButtons_CheckedChanged);
             // 
             // label6
             // 
