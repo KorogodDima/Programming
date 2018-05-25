@@ -64,6 +64,7 @@
             // 
             // CustomerName
             // 
+            this.CustomerName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.CustomerName.Location = new System.Drawing.Point(15, 29);
             this.CustomerName.Name = "CustomerName";
             this.CustomerName.Size = new System.Drawing.Size(339, 20);
@@ -89,7 +90,7 @@
             // 
             // ModelName
             // 
-            this.ModelName.Location = new System.Drawing.Point(15, 80);
+            this.ModelName.Location = new System.Drawing.Point(15, 117);
             this.ModelName.Name = "ModelName";
             this.ModelName.Size = new System.Drawing.Size(410, 20);
             this.ModelName.TabIndex = 4;
@@ -97,7 +98,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 64);
+            this.label3.Location = new System.Drawing.Point(12, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 5;
@@ -113,6 +114,7 @@
             this.ButtonSmartphone.TabStop = true;
             this.ButtonSmartphone.Text = "Смартфон";
             this.ButtonSmartphone.UseVisualStyleBackColor = true;
+            this.ButtonSmartphone.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
             // 
             // ButtonTablet
             // 
@@ -124,6 +126,7 @@
             this.ButtonTablet.TabStop = true;
             this.ButtonTablet.Text = "Планшет";
             this.ButtonTablet.UseVisualStyleBackColor = true;
+            this.ButtonTablet.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
             // 
             // ButtonLaptop
             // 
@@ -135,6 +138,7 @@
             this.ButtonLaptop.TabStop = true;
             this.ButtonLaptop.Text = "Ноутбук";
             this.ButtonLaptop.UseVisualStyleBackColor = true;
+            this.ButtonLaptop.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
             // 
             // ButtonPC
             // 
@@ -146,6 +150,7 @@
             this.ButtonPC.TabStop = true;
             this.ButtonPC.Text = "ПК";
             this.ButtonPC.UseVisualStyleBackColor = true;
+            this.ButtonPC.CheckedChanged += new System.EventHandler(this.radioButtons_CheckedChanged);
             // 
             // ListOfFaults
             // 
@@ -234,7 +239,7 @@
             this.GroupBox.Controls.Add(this.ButtonLaptop);
             this.GroupBox.Controls.Add(this.ButtonTablet);
             this.GroupBox.Controls.Add(this.ButtonSmartphone);
-            this.GroupBox.Location = new System.Drawing.Point(15, 100);
+            this.GroupBox.Location = new System.Drawing.Point(15, 55);
             this.GroupBox.Name = "GroupBox";
             this.GroupBox.Size = new System.Drawing.Size(281, 37);
             this.GroupBox.TabIndex = 18;

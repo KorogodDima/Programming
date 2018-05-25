@@ -26,5 +26,9 @@ namespace Servise
                 return (RepairRequest)Xs.Deserialize(fileStream);
             }
         }
+        public static RepairRequest LoadFromStream(Stream file)
+        {
+            return (RepairRequest)Xs.Deserialize(file);
+        }
     }
 }

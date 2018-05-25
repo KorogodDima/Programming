@@ -1,0 +1,47 @@
+﻿@model Servise.RepairRequest
+
+@{
+    ViewBag.Title = "Print";
+}
+
+<h2>Print</h2>
+
+<div><p>ФИО: @Model.FullName</p></div>
+<div><p>Тип устройства: @Model.Type</p></div>
+<div><p>Модель: @Model.Model</p></div>
+<div><p>Цена:@Model.Price рублей</p></div>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>
+            Неисправность
+        </th>
+        <th>
+            Коэффициент
+        </th>
+     </tr>
+    <tbody>
+
+        @foreach (var f in Model.Faults)
+        {
+            <div></div>
+            <tr>
+                <td style="border:1px solid black">
+
+                    <fieldset>
+                        <b>
+                            @f.Description
+                        </b>
+                    </fieldset>
+                </td>
+                <td style="border:1px solid black">
+                    <fieldset>
+                        <b>
+                            @f.Coefficient
+                        </b>
+                    </fieldset>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
