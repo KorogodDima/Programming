@@ -155,5 +155,20 @@ namespace RepairService.UI
 
             PriceBox.Value = price;
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            var lv = new LicenceValidator();
+            if (!lv.HasLicense)
+            {
+                MessageBox.Show("Лицензия не найдена. Купите её за 2 рубля где-нибудь.");
+                Application.Exit();
+            }
+            if (!lv.IsValid)
+            {
+                MessageBox.Show("Лицензия просрочена. Купите её за 2 рубля где-нибудь.");
+                Application.Exit();
+            }
+        }
     }
 }

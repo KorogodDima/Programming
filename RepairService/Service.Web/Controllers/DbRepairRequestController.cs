@@ -104,7 +104,7 @@ namespace Service.Web.Controllers
             return View(dbRepairRequest);
         }
 
-        // POST: DbRideRequests/Delete/5
+        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

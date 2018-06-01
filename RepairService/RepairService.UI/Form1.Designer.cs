@@ -282,6 +282,7 @@
             this.GroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
 
         }
 
