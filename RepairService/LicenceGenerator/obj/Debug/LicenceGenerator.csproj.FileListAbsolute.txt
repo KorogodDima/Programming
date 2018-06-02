@@ -1,0 +1,8 @@
+F:\RepairService\LicenceGenerator\bin\Debug\LicenceGenerator.exe.config
+F:\RepairService\LicenceGenerator\bin\Debug\LicenceGenerator.exe
+F:\RepairService\LicenceGenerator\bin\Debug\LicenceGenerator.pdb
+F:\RepairService\LicenceGenerator\bin\Debug\Servise.dll
+F:\RepairService\LicenceGenerator\bin\Debug\Servise.pdb
+F:\RepairService\LicenceGenerator\obj\Debug\LicenceGenerator.csproj.CoreCompileInputs.cache
+F:\RepairService\LicenceGenerator\obj\Debug\LicenceGenerator.exe
+F:\RepairService\LicenceGenerator\obj\Debug\LicenceGenerator.pdb

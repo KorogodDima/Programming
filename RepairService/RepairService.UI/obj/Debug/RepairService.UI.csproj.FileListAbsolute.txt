@@ -66,3 +66,16 @@ E:\RepairService2\RepairService.UI\obj\Debug\RepairService.UI.csproj.CoreCompile
 E:\RepairService2\RepairService.UI\obj\Debug\RepairService.UI.exe
 E:\RepairService2\RepairService.UI\obj\Debug\RepairService.UI.pdb
 C:\Users\111\Desktop\RepairService\RepairService.UI\obj\Debug\RepairService.UI.csprojAssemblyReference.cache
+F:\RepairService\RepairService.UI\bin\Debug\RepairService.UI.exe.config
+F:\RepairService\RepairService.UI\bin\Debug\RepairService.UI.exe
+F:\RepairService\RepairService.UI\bin\Debug\RepairService.UI.pdb
+F:\RepairService\RepairService.UI\bin\Debug\Servise.dll
+F:\RepairService\RepairService.UI\bin\Debug\Servise.pdb
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.csprojResolveAssemblyReference.cache
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.FaultsForm.resources
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.Form1.resources
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.Properties.Resources.resources
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.csproj.GenerateResource.Cache
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.csproj.CoreCompileInputs.cache
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.exe
+F:\RepairService\RepairService.UI\obj\Debug\RepairService.UI.pdb
